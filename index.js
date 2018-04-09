@@ -1,3 +1,7 @@
 function theBeatlesPlay(musicians, instruments) {
-  return musicians.map((el,i,arr) => `${el} plays ${instruments[i]}`);
+  let output = [];
+  for (let i = 0; i < musicians.length; i++) {
+    output.push(`${musicians[i]} plays ${instruments[i]}`);
+  }
+  return output;
 }
